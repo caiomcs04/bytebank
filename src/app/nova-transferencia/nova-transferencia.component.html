@@ -1,15 +1,24 @@
-<form>
-  <h2>Nova Transferência</h2>
+<section class="container">
 
-  <div>
-    <label for="ammount">Valor</label>
-    <input id="ammount" type="text">
-  </div>
+  <!-- NgSubmit no form server para ditar a ação que o formulario fará após sua conclusao.
+     necessario botao de tipo subimit para ativa-la -->
+  <form class="transfer-form" (ngSubmit)="transfer()">
+    <h2 class="transfer-form__titulo">Nova Transferência</h2>
 
-  <div>
-    <label for="destiny">Destino</label>
-    <input id="destiny" type="text">
-  </div>
+    <div class="form-field">
+      <label class="form-field__label" for="ammount">Valor</label>
 
-  <button>Transferir</button>
-</form>
+      <!--O dualbind ngModel cercado por [()] serve tanto para receber como armazenar o valor de uma variavel-->
+      <input class="form-field__input" id="ammount" type="text" [(ngModel)]="ammount"  name="ammount"/>
+    </div>
+
+    <div class="form-field">
+      <label class="form-field__label" for="destiny">Destino</label>
+      <input class="form-field__input" id="destiny" type="text" [(ngModel)]="destiny" name="destiny" />
+    </div>
+
+    <div class="botao-wrapper">
+      <button class="botao" type="submit">Transferir</button>
+    </div>
+  </form>
+</section>

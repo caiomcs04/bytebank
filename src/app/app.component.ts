@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bytebank';
+  transferData:any = {destiny:undefined  ,ammount:undefined}
+
+  transfer(transferData:any){
+    this.transferData = transferData;
+  }
 }

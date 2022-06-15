@@ -1,1 +1,6 @@
-<bytebank-nova-transferencia></bytebank-nova-transferencia>
+<!--Entre () para receber do componente algum dado propagado-->
+<bytebank-nova-transferencia (onTransfer)="transfer($event)"></bytebank-nova-transferencia>
+
+<!--Entre [] para enviar para o componente algum dado-->
+<bytebank-extrato [transferData]="transferData"></bytebank-extrato>
+
