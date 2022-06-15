@@ -1,2 +1,15 @@
-<p>Valor: {{transferData.ammount}}</p>
-<p>Destino: {{transferData.destiny}}</p>
+<table class="tabela">
+  <thead class="tabela__cabecalho">
+    <th class="tabela__cabecalho__conteudo">Data</th>
+    <th class="tabela__cabecalho__conteudo">Valor</th>
+    <th class="tabela__cabecalho__conteudo">Destino</th>
+  </thead>
+  <tbody>
+    <!--ngFor para percorrer um array e criar a quantidade de evrentos necessarios-->
+    <tr class="tabela__linha" *ngFor="let transfer of transferData">
+      <td class="tabela__conteudo">{{ transfer.date | date:'short'}}</td>
+      <td class="tabela__conteudo">{{ transfer.ammount | currency}}</td>
+      <td class="tabela__conteudo">{{ transfer.destiny }}</td>
+    </tr>
+  </tbody>
+</table>

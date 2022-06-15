@@ -10,8 +10,8 @@ export class NovaTransferenciaComponent implements OnInit {
 //Output serve para se comunicar com outros componentes. no caso propagar para o pai desse componente
   @Output() onTransfer = new EventEmitter<any>();
 
-  ammount!: number;
-  destiny!: number;
+  ammount?: number;
+  destiny?: number;
 
   constructor() { }
 
@@ -25,8 +25,8 @@ export class NovaTransferenciaComponent implements OnInit {
   }
 
   cleanInputs(){
-    this.ammount = 0;
-    this.destiny = 0;
+    this.ammount = undefined;
+    this.destiny = undefined;
   }
 
 }

@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ExtratoComponent implements OnInit {
 
   //Input para receber valores de outro componente
-  @Input()transferData: any;
+  @Input()transferData!: any[];
 
   constructor() { }
 
