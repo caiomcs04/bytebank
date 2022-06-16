@@ -1,3 +1,4 @@
+import { TransferService } from './services/transfer.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,8 +10,6 @@ export class AppComponent {
   title = 'bytebank';
   transferData:any[] = [];
 
-  transfer(transferData:any){
-    const transfer ={...transferData, date: new Date()};
-    this.transferData.push(transfer);
-  }
+  constructor(private transferService:TransferService){}
+
 }

@@ -4,7 +4,7 @@
     <th class="tabela__cabecalho__conteudo">Valor</th>
     <th class="tabela__cabecalho__conteudo">Destino</th>
   </thead>
-  <tbody>
+  <tbody *ngIf="transferData?.length > 0; else emptyList">
     <!--ngFor para percorrer um array e criar a quantidade de evrentos necessarios-->
     <tr class="tabela__linha" *ngFor="let transfer of transferData">
       <td class="tabela__conteudo">{{ transfer.date | date:'short'}}</td>
@@ -13,3 +13,7 @@
     </tr>
   </tbody>
 </table>
+
+<ng-template #emptyList>
+  <p>Nenhuma operação cadastrada</p>
+</ng-template>
