@@ -1,6 +1,7 @@
 import { Transfer } from './../models/transferModel';
 import { TransferService } from './../services/transfer.service';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'bytebank-nova-transferencia',
@@ -15,7 +16,7 @@ export class NovaTransferenciaComponent implements OnInit {
   ammount: number | undefined;
   destiny: string | undefined;
 
-  constructor(private transferService:TransferService) { }
+  constructor(private transferService:TransferService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -26,16 +27,11 @@ export class NovaTransferenciaComponent implements OnInit {
 
     this.transferService.addTransfer(transferData).subscribe(res =>{
       console.log(res);
-      this.cleanInputs();
+      this.router.navigateByUrl("extrato");
     },
       (error) => console.error(error)
     )
 
-  }
-
-  cleanInputs(){
-    this.ammount = undefined;
-    this.destiny = undefined;
   }
 
 }

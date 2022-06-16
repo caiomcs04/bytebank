@@ -1,12 +1,20 @@
 <!--Entre () para receber do componente algum dado propagado-->
 <!-- <bytebank-nova-transferencia (onTransfer)="transfer($event)"></bytebank-nova-transferencia> -->
 
-<bytebank-nova-transferencia></bytebank-nova-transferencia>
+<!-- <bytebank-nova-transferencia></bytebank-nova-transferencia> -->
 
 
 <!--Entre [] para enviar para o componente algum dado-->
 <!-- <bytebank-extrato [transferData]="transferData"></bytebank-extrato> -->
 
-<bytebank-extrato></bytebank-extrato>
+<!-- <bytebank-extrato></bytebank-extrato> -->
 
+<header>
+  <a routerLink="extrato">Extrato</a>
+  <a routerLink="nova-transferencia" routerLinkActive="ativo">Nova Transferência</a>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
 
