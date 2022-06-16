@@ -12,7 +12,7 @@
 
 > Clone this project in your machine with the command:
 > ```
-> 	git clone [https://github.com/caiomcs04/react-form.git]
+> 	git clone [[https://github.com/caiomcs04/react-form.git](https://github.com/caiomcs04/bytebank.git)]
 > ```
 >Access your terminal project folder:
 > ```
@@ -23,18 +23,19 @@
 > 	npm install
 > ```
 
-## Execution
+## Local Environment
 
->  When the installation is ready, start the application with the command::
-> ```
-> 	npm start
-> ```
-> The application will be available for viewing in your browser in [localhost](http://localhost:3000/)
+Run `ng s -o` to have the project upload locally. If the bowser window doesn't open automatically, access the url `http://localhost:4200/`.
+The project is already automatically reloaded according to the changes you make in the code
+
+## Simulated Back-end
+
+Run `npm install -g json-server` to globally install the json server. After installation, enter the project folder "dados"  and run `json-server --watch db.json` in terminal, with that a server will be initialized at the url `http://localhost:3000/`, after initialization it will be possible to make http requests.
 
 ## Functionalities
 
 > This project aims at the functionality of being: 
-> - A sample of a basic form using material-ui, focused on programming practice
+> - of a basic form using angular to post and get a local data base, focused on programming practice
 
 ## Authors
 
