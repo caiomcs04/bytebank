@@ -1,27 +1,42 @@
-# Bytebank
+# ByteBank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+>A sample of a basic form using angular to post and get a local data base. Project for the purpose of study.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> - **Node** with version greater than or equal to 8.1 - [Node Donwload](https://nodejs.org/pt-br/download/)
+> - **NPM**  with version greater than or equal to 5.6 - [Npm Donwload](https://www.npmjs.com/package/download)
+> - **Angular CLI**
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Clone this project in your machine with the command:
+> ```
+> 	git clone [https://github.com/caiomcs04/react-form.git]
+> ```
+>Access your terminal project folder:
+> ```
+> 	cd [Your Project folder name]
+> ```
+> Already the application's folder in your terminal, type the following command to install the node-modules:
+> ```
+> 	npm install
+> ```
 
-## Build
+## Execution
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+>  When the installation is ready, start the application with the command::
+> ```
+> 	npm start
+> ```
+> The application will be available for viewing in your browser in [localhost](http://localhost:3000/)
 
-## Running unit tests
+## Functionalities
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> This project aims at the functionality of being: 
+> - A sample of a basic form using material-ui, focused on programming practice
 
-## Running end-to-end tests
+## Authors
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+> - **Caio Moreira de Carvalho Sampaio** - [Linkedin](https://www.linkedin.com/in/caio-sampaio-b02a3669/) | [Email](caio6c@yahoo.com.br)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
