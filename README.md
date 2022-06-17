@@ -12,7 +12,7 @@
 
 > Clone this project in your machine with the command:
 > ```
-> 	git clone [[https://github.com/caiomcs04/react-form.git](https://github.com/caiomcs04/bytebank.git)]
+> 	git clone [(https://github.com/caiomcs04/bytebank.git)]
 > ```
 >Access your terminal project folder:
 > ```
